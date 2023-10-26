@@ -1,4 +1,5 @@
 package com.company;
 
-public class ChildrenBook {
+public class ChildrenBook extends Book{
+    int age;
 }
