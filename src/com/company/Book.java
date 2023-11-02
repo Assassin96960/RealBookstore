@@ -7,6 +7,10 @@ public class Book {
     private double price;
     private BookType type;
 
+    public int getAvailables() {
+        return availables;
+    }
+
     public Book() {
     }
 
@@ -43,5 +47,17 @@ public class Book {
     }
     public double getPrice(double priceReduction) {
         return price*(1-priceReduction);
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public BookType getType() {
+        return type;
     }
 }

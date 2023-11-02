@@ -10,5 +10,10 @@ public class ComicBook extends Book{
         super(title, author, availables, price, type);
         this.characterName = characterName;
     }
+    public double getPrice(){
+        double orgprice=super.getPrice();
 
+        System.out.println(super.getTitle() + "is on sale 60%");
+        return orgprice*0.4;
+    }
 }
